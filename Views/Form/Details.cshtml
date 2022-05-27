@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer localizer
+@model BankMillenniumTask.Models.FormDto
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<body>
+    <p>@localizer["Nickname"]</p>
+    @Html.DisplayFor(model => model.Nickname)
+    <br />
+    <p>@localizer["Email"]</p>
+    @Html.DisplayFor(model => model.Email)
+
+</body>
